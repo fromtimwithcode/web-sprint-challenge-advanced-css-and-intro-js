@@ -250,11 +250,11 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(array) {
   const bornAndDied20th = [];
-  let test = [];
+  let years = [];
 
   for (let i in array) {
-    test.push(array[i].years.split(' - '));
-    if (test[i][0] >= 1900 && test[i][1] <= 2000) {
+    years.push(array[i].years.split(' - '));
+    if (years[i][0] >= 1900 && years[i][1] <= 2000) {
       bornAndDied20th.push(array[i].name);
     }
   }
